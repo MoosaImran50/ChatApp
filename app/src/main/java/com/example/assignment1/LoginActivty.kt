@@ -1,6 +1,7 @@
 package com.example.assignment1
 
 import android.content.Intent
+import android.content.pm.ActivityInfo
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
@@ -14,6 +15,7 @@ class LoginActivty : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_NO)
         setContentView(R.layout.activity_login_activty)
+        requestedOrientation = ActivityInfo.SCREEN_ORIENTATION_PORTRAIT
         getSupportActionBar()?.hide()
 
         val nameText = findViewById<EditText>(R.id.nameField)

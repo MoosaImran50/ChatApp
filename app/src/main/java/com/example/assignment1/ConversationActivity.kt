@@ -1,5 +1,6 @@
 package com.example.assignment1
 
+import android.content.pm.ActivityInfo
 import android.graphics.Color
 import android.os.Bundle
 import android.widget.Button
@@ -22,6 +23,7 @@ class ConversationActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.conversation_main)
+        requestedOrientation = ActivityInfo.SCREEN_ORIENTATION_PORTRAIT
 
         // fetching data of the selected contact
         val myContactNumber = intent.getStringExtra("myID")
@@ -81,7 +83,7 @@ class ConversationActivity : AppCompatActivity() {
                 textBox.text.clear()
 
                 // writing to database
-                viewModel.addMessage(Message(messageID, myContactNumber, receiverContactNumber, message, currentTime))
+                Message(messageID, myContactNumber, receiverContactNumber, message, currentTime).addMessage()
             }
         }
 

@@ -16,8 +16,4 @@ class ContactViewModel: ViewModel() {
         repository.readContacts(myContactID, contacts)
     }
 
-    fun addContact(contact: Contact) {
-        repository.addContact(contact)
-    }
-
 }

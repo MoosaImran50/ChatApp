@@ -16,8 +16,4 @@ class MessageViewModel: ViewModel() {
         repository.readMessages(messageID, messages)
     }
 
-    fun addMessage(message: Message) {
-        repository.addMessage(message)
-    }
-
 }

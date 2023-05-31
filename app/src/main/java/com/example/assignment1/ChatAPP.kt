@@ -7,4 +7,5 @@ class ChatAPP: Application() {
         super.onCreate()
         FirebaseDatabase.getInstance().setPersistenceEnabled(true)
     }
+
 }

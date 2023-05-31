@@ -1,6 +1,7 @@
 package com.example.assignment1
 
 import android.content.Intent
+import android.content.pm.ActivityInfo
 import android.os.Bundle
 import android.provider.ContactsContract
 import android.widget.Button
@@ -35,6 +36,7 @@ class ContactActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.contact_main)
+        requestedOrientation = ActivityInfo.SCREEN_ORIENTATION_PORTRAIT
 
         // fetching data of the selected contact
         myName = intent.getStringExtra("NAME")!!
@@ -110,8 +112,8 @@ class ContactActivity : AppCompatActivity() {
                 contactTextBox.text.clear()
 
                 // writing to database
-                viewModel.addContact(Contact(myContact, myName, receiverContact, receiverName))
-                viewModel.addContact(Contact(receiverContact, receiverName, myContact, myName))
+                Contact(myContact, myName, receiverContact, receiverName).addContact()
+                Contact(receiverContact, receiverName, myContact, myName).addContact()
 
                 openConversation(myContact, myName, receiverContact, receiverName)
 
@@ -150,8 +152,8 @@ class ContactActivity : AppCompatActivity() {
             val retrievedPhoneNumber = cursor.getString(cursor.getColumnIndexOrThrow(ContactsContract.CommonDataKinds.Phone.NUMBER))
             cursor.close()
 
-            viewModel.addContact(Contact(myContact, myName, retrievedPhoneNumber, retrievedName))
-            viewModel.addContact(Contact(retrievedPhoneNumber, retrievedName, myContact, myName))
+            Contact(myContact, myName, retrievedPhoneNumber, retrievedName).addContact()
+            Contact(retrievedPhoneNumber, retrievedName, myContact, myName).addContact()
 
             openConversation(myContact, myName, retrievedPhoneNumber, retrievedName)
 
