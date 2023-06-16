@@ -1,6 +1,6 @@
 # ChatApp
 
-![chat](https://github.com/MoosaImran50/ChatApp/assets/108832275/2fd9183d-7130-455e-82d1-af694ccb3f39)
+![ic_launcher](https://github.com/MoosaImran50/ChatApp/assets/108832275/b87518d9-d72c-48f3-b9ab-1e0fa435d499)
 
 ChatApp is a realtime messaging/chatting Android app developed using Kotlin. The app uses Firebase Realtime Database for storage.
 
