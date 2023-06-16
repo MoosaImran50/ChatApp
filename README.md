@@ -27,10 +27,11 @@ Messages are fetched and displayed in real-time without any delay.
 
 ## Demo Video
 
-
+https://github.com/MoosaImran50/ChatApp/assets/108832275/fd08b6ab-e6ea-483b-9751-2e227ddde097
 
 ## Screenshots
 
-![Screenshot_20230613_211202_ChatAPP](https://github.com/MoosaImran50/ChatApp/assets/108832275/09f431fd-59a1-46a7-9293-b512a45b5bbc | width=300)
-![Screenshot_20230613_211751_ChatAPP](https://github.com/MoosaImran50/ChatApp/assets/108832275/b2dae34f-4938-44c1-b996-000556fb9b33 | width=300)
-![Screenshot_20230617_033211_ChatAPP](https://github.com/MoosaImran50/ChatApp/assets/108832275/b17a0b6e-fa82-4463-bda5-8632b5c2648a | width=300)
+<img src="https://github.com/MoosaImran50/ChatApp/assets/108832275/09f431fd-59a1-46a7-9293-b512a45b5bbc" alt="Screenshot 1" width="300">
+<img src="https://github.com/MoosaImran50/ChatApp/assets/108832275/b2dae34f-4938-44c1-b996-000556fb9b33" alt="Screenshot 2" width="300">
+<img src="https://github.com/MoosaImran50/ChatApp/assets/108832275/b17a0b6e-fa82-4463-bda5-8632b5c2648a" alt="Screenshot 3" width="300">
+
