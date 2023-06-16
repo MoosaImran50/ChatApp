@@ -6,7 +6,7 @@ ChatApp is a realtime messaging/chatting Android app developed using Kotlin. The
 
 ## Login Screen
 
-The login screen allows users to enter their name and phone number.
+The login screen allows users to enter their name and phone number, which leads them to the Contacts Activity.
 
 ## Main Components
 
